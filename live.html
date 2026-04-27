@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Streams - PKC World</title>
+  <title>Channels - PKC World</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -21,7 +21,7 @@
 
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html">ပွဲစာရင်း</a></li>
-    <li><a href="live.html" class="active">🔴 LIVE</a></li>
+    <li><a href="live.html" class="active">Channels</a></li>
     <li><a href="members.html">Members</a></li>
     <li><a href="members/login.html">Login</a></li>
   </ul>
@@ -31,8 +31,8 @@
 
 <!-- ===== HEADER ===== -->
 <section class="live-header">
-  <h1>🔴 LIVE STREAM</h1>
-  <p>လက်ရှိ Live ထုတ်လွှင့်နေသော Stream များ</p>
+  <h1>📺 Partner Channels</h1>
+  <p>PKC World နှင့် ချိတ်ဆက်ထားသော Facebook & YouTube Channels</p>
 </section>
 
 <!-- ===== FILTER ===== -->
@@ -40,125 +40,141 @@
   <button class="tab-btn active" onclick="filterStreamers('all', this)">All</button>
   <button class="tab-btn" onclick="filterStreamers('youtube', this)">YouTube</button>
   <button class="tab-btn" onclick="filterStreamers('facebook', this)">Facebook</button>
-  <button class="tab-btn" onclick="filterStreamers('live', this)">Live</button>
 </div>
 
-<!-- ===== STREAM LIST ===== -->
+<!-- ===== CHANNEL LIST ===== -->
 <section class="stream-list" id="streamList">
 
-  <!-- ===== YOUTUBE (3) ===== -->
-  <div class="stream-card" data-platform="youtube" data-live="true">
-    <div class="stream-info">
-      <h3>PKC Channel 1</h3>
-      <p>Match Live</p>
-      <span class="badge youtube">YouTube</span>
-      <span class="badge live">LIVE</span>
-    </div>
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID1" target="_blank">
-      <button>Watch</button>
-    </a>
-  </div>
+  <!-- ========================= -->
+  <!-- 🔴 YOUTUBE CHANNELS (3) -->
+  <!-- ========================= -->
 
-  <div class="stream-card" data-platform="youtube" data-live="false">
+  <!-- 👉 CHANGE LINK HERE -->
+  <div class="stream-card" data-platform="youtube">
     <div class="stream-info">
-      <h3>PKC Channel 2</h3>
-      <p>Replay</p>
+      <h3>YouTube Channel 1</h3>
+      <p>ခြင်းလုံးပွဲ Live & Highlights</p>
       <span class="badge youtube">YouTube</span>
     </div>
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID2" target="_blank">
-      <button>Watch</button>
+
+    <!-- 🔥 ဒီမှာ YouTube channel link ထည့် -->
+    <a href="https://www.youtube.com/@yourchannel1" target="_blank">
+      <button>Watch on YouTube</button>
     </a>
   </div>
 
-  <div class="stream-card" data-platform="youtube" data-live="true">
+  <div class="stream-card" data-platform="youtube">
     <div class="stream-info">
-      <h3>PKC Channel 3</h3>
-      <p>Live Match</p>
+      <h3>YouTube Channel 2</h3>
+      <p>PKC Friend Streamer</p>
       <span class="badge youtube">YouTube</span>
-      <span class="badge live">LIVE</span>
     </div>
-    <a href="https://www.youtube.com/watch?v=VIDEO_ID3" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.youtube.com/@yourchannel2" target="_blank">
+      <button>Watch on YouTube</button>
     </a>
   </div>
 
-  <!-- ===== FACEBOOK (7) ===== -->
-  <div class="stream-card" data-platform="facebook" data-live="true">
+  <div class="stream-card" data-platform="youtube">
     <div class="stream-info">
-      <h3>FB Streamer 1</h3>
-      <p>Live Match</p>
-      <span class="badge facebook">Facebook</span>
-      <span class="badge live">LIVE</span>
+      <h3>YouTube Channel 3</h3>
+      <p>Match Highlights</p>
+      <span class="badge youtube">YouTube</span>
     </div>
-    <a href="https://www.facebook.com/page1/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.youtube.com/@yourchannel3" target="_blank">
+      <button>Watch on YouTube</button>
+    </a>
+  </div>
+
+
+  <!-- ========================= -->
+  <!-- 🔵 FACEBOOK PAGES (7) -->
+  <!-- ========================= -->
+
+  <!-- 👉 CHANGE LINK HERE -->
+  <div class="stream-card" data-platform="facebook">
+    <div class="stream-info">
+      <h3>Facebook Page 1</h3>
+      <p>ခြင်းလုံးပွဲ Live Stream</p>
+      <span class="badge facebook">Facebook</span>
+    </div>
+
+    <!-- 🔥 ဒီမှာ Facebook page link ထည့် -->
+    <a href="https://www.facebook.com/yourpage1" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
   <div class="stream-card" data-platform="facebook">
     <div class="stream-info">
-      <h3>FB Streamer 2</h3>
-      <p>Replay</p>
+      <h3>Facebook Page 2</h3>
+      <p>PKC Streamer</p>
       <span class="badge facebook">Facebook</span>
     </div>
-    <a href="https://www.facebook.com/page2/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
-    </a>
-  </div>
 
-  <div class="stream-card" data-platform="facebook" data-live="true">
-    <div class="stream-info">
-      <h3>FB Streamer 3</h3>
-      <p>Live Match</p>
-      <span class="badge facebook">Facebook</span>
-      <span class="badge live">LIVE</span>
-    </div>
-    <a href="https://www.facebook.com/page3/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+    <a href="https://www.facebook.com/yourpage2" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
   <div class="stream-card" data-platform="facebook">
     <div class="stream-info">
-      <h3>FB Streamer 4</h3>
-      <p>Upcoming</p>
+      <h3>Facebook Page 3</h3>
+      <p>Match Highlights</p>
       <span class="badge facebook">Facebook</span>
     </div>
-    <a href="https://www.facebook.com/page4/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.facebook.com/yourpage3" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
   <div class="stream-card" data-platform="facebook">
     <div class="stream-info">
-      <h3>FB Streamer 5</h3>
-      <p>Upcoming</p>
+      <h3>Facebook Page 4</h3>
+      <p>Sports Community</p>
       <span class="badge facebook">Facebook</span>
     </div>
-    <a href="https://www.facebook.com/page5/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.facebook.com/yourpage4" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
   <div class="stream-card" data-platform="facebook">
     <div class="stream-info">
-      <h3>FB Streamer 6</h3>
-      <p>Upcoming</p>
+      <h3>Facebook Page 5</h3>
+      <p>Live Broadcast</p>
       <span class="badge facebook">Facebook</span>
     </div>
-    <a href="https://www.facebook.com/page6/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.facebook.com/yourpage5" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
   <div class="stream-card" data-platform="facebook">
     <div class="stream-info">
-      <h3>FB Streamer 7</h3>
-      <p>Upcoming</p>
+      <h3>Facebook Page 6</h3>
+      <p>Match Updates</p>
       <span class="badge facebook">Facebook</span>
     </div>
-    <a href="https://www.facebook.com/page7/videos/VIDEO_ID" target="_blank">
-      <button>Watch</button>
+
+    <a href="https://www.facebook.com/yourpage6" target="_blank">
+      <button>View Page</button>
+    </a>
+  </div>
+
+  <div class="stream-card" data-platform="facebook">
+    <div class="stream-info">
+      <h3>Facebook Page 7</h3>
+      <p>Sports News</p>
+      <span class="badge facebook">Facebook</span>
+    </div>
+
+    <a href="https://www.facebook.com/yourpage7" target="_blank">
+      <button>View Page</button>
     </a>
   </div>
 
