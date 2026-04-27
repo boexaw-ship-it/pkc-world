@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PKC World</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Myanmar:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>PKC World</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">ပွဲစာရင်း</a></li>
+    <li><a href="live.html">🔴 LIVE</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="members/login.html">Login</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>PIKE <span>KYAW</span> CHIN</h1>
+  <p>ပိုက်ကျော်ခြင်း ပွဲများ · Live Stream · Member System</p>
+</section>
+
+<!-- ===== MATCH SECTION ===== -->
+<section class="matches">
+
+  <div class="section-header">
+    <h2>ကြေးစားပွဲများ</h2>
+  </div>
+
+  <div class="match-list" id="matchList">
+
+    <!-- Match Card -->
+    <div class="match-card">
+      <div class="teams">
+        <span>Team A</span>
+        <strong>VS</strong>
+        <span>Team B</span>
+      </div>
+
+      <div class="info">
+        📅 2026-04-27 | 🕐 7:00 PM
+      </div>
+
+      <button onclick="goMatch()">အသေးစိတ်</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== LIVE STREAM ===== -->
+<section class="live">
+  <div class="section-header">
+    <h2>🔴 Live Stream</h2>
+  </div>
+
+  <div class="live-box">
+    <p>Live stream ကြည့်ရန်👇</p>
+    <button onclick="goLive()">LIVE ကြည့်</button>
+  </div>
+</section>
+
+<!-- ===== CHAT ===== -->
+<section class="chat">
+  <div class="section-header">
+    <h2>💬 Live Chat</h2>
+  </div>
+
+  <div class="chat-box">
+    <div id="chatMessages"></div>
+
+    <div class="chat-input">
+      <input id="chatInput" placeholder="စာရေးပါ...">
+      <button onclick="sendMsg()">➤</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 PKC World</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script src="js/main.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
