@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Detail - PKC World</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/match.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>PKC World</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">ပွဲစာရင်း</a></li>
+    <li><a href="live.html">🔴 LIVE</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="members/login.html">Login</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- ===== MATCH DETAIL ===== -->
+<section class="match-detail">
+
+  <h1 id="matchTitle">Team A vs Team B</h1>
+
+  <div class="match-meta">
+    <span id="matchDate">📅 2026-04-27</span>
+    <span id="matchTime">🕐 7:00 PM</span>
+  </div>
+
+  <div class="teams-box">
+    <div class="team">
+      <img src="assets/images/team1.png" alt="">
+      <h2 id="teamA">Team A</h2>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="team">
+      <img src="assets/images/team2.png" alt="">
+      <h2 id="teamB">Team B</h2>
+    </div>
+  </div>
+
+  <div class="match-info">
+    <p id="matchDesc">
+      ဒီပွဲမှာ ထိပ်တန်းအသင်းနှစ်သင်းတွေ့ဆုံပြီး စိတ်လှုပ်ရှားဖွယ်ကောင်းမယ်။
+    </p>
+  </div>
+
+  <div class="actions">
+    <button onclick="goLive()">🔴 LIVE ကြည့်</button>
+    <button onclick="goHome()">⬅ Back</button>
+  </div>
+
+</section>
+
+<!-- ===== RELATED MATCHES ===== -->
+<section class="related">
+  <h2>Related Matches</h2>
+
+  <div class="match-list">
+
+    <div class="match-card" onclick="goMatch(2)">
+      <p>Team C vs Team D</p>
+    </div>
+
+    <div class="match-card" onclick="goMatch(3)">
+      <p>Team E vs Team F</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 PKC World</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script src="js/main.js"></script>
+<script src="js/matches.js"></script>
+
+</body>
+</html>
