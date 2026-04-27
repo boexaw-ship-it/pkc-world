@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Streams - PKC World</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/live.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>PKC World</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">ပွဲစာရင်း</a></li>
+    <li><a href="live.html" class="active">🔴 LIVE</a></li>
+    <li><a href="members.html">Members</a></li>
+    <li><a href="members/login.html">Login</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<section class="live-header">
+  <h1>🔴 LIVE STREAM</h1>
+  <p>လက်ရှိ Live ထုတ်လွှင့်နေသော Stream များ</p>
+</section>
+
+<!-- ===== FILTER TABS ===== -->
+<div class="tabs">
+  <button class="tab-btn active" onclick="filterStreamers('all', this)">All</button>
+  <button class="tab-btn" onclick="filterStreamers('youtube', this)">YouTube</button>
+  <button class="tab-btn" onclick="filterStreamers('facebook', this)">Facebook</button>
+  <button class="tab-btn" onclick="filterStreamers('live', this)">Live Now</button>
+</div>
+
+<!-- ===== STREAM LIST ===== -->
+<section class="stream-list" id="streamList">
+
+  <!-- STREAM CARD -->
+  <div class="stream-card" data-platform="youtube" data-live="true">
+    <div class="stream-info">
+      <h3>PKC Official Channel</h3>
+      <p>Team A vs Team B</p>
+      <span class="badge youtube">YouTube</span>
+      <span class="badge live">LIVE</span>
+    </div>
+
+    <a href="https://youtube.com" target="_blank">
+      <button>Watch</button>
+    </a>
+  </div>
+
+  <!-- STREAM CARD -->
+  <div class="stream-card" data-platform="facebook" data-live="false">
+    <div class="stream-info">
+      <h3>Streamer Ko Aung</h3>
+      <p>Team C vs Team D</p>
+      <span class="badge facebook">Facebook</span>
+    </div>
+
+    <a href="https://facebook.com" target="_blank">
+      <button>Watch</button>
+    </a>
+  </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 PKC World</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script src="js/main.js"></script>
+<script src="js/live.js"></script>
+
+</body>
+</html>
