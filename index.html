@@ -3,13 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>PKC World</title>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#F0A500">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Myanmar:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +30,7 @@
 
   <ul class="nav-links" id="navLinks">
     <li><a href="index.html" class="active">ပွဲစာရင်း</a></li>
-    <li><a href="live.html">🔴 LIVE</a></li>
+    <li><a href="live.html">Channels</a></li>
     <li><a href="members.html">Members</a></li>
     <li><a href="members/login.html">Login</a></li>
   </ul>
@@ -33,63 +40,54 @@
 
 <!-- ===== HERO ===== -->
 <section class="hero">
-  <h1>PIKE <span>KYAW</span> CHIN</h1>
-  <p>ပိုက်ကျော်ခြင်း ပွဲများ · Live Stream · Member System</p>
+  <h1>PKC <span>World</span></h1>
+  <p>ခြင်းလုံးပွဲ Live၊ Schedule နှင့် Members Platform</p>
 </section>
 
 <!-- ===== MATCH SECTION ===== -->
-<section class="matches">
-
-  <div class="section-header">
-    <h2>ကြေးစားပွဲများ</h2>
-  </div>
-
-  <div class="match-list" id="matchList">
-
-    <!-- Match Card -->
-    <div class="match-card">
-      <div class="teams">
-        <span>Team A</span>
-        <strong>VS</strong>
-        <span>Team B</span>
-      </div>
-
-      <div class="info">
-        📅 2026-04-27 | 🕐 7:00 PM
-      </div>
-
-      <button onclick="goMatch()">အသေးစိတ်</button>
-    </div>
-
-  </div>
+<section class="section-header">
+  <h2>🔥 Upcoming Matches</h2>
 </section>
 
-<!-- ===== LIVE STREAM ===== -->
-<section class="live">
-  <div class="section-header">
-    <h2>🔴 Live Stream</h2>
+<section class="match-list">
+
+  <div class="match-card">
+    <div class="teams">Team A vs Team B</div>
+    <div class="info">📅 Today | 🕒 7:00 PM</div>
+    <button onclick="goMatch(1)">View</button>
   </div>
 
-  <div class="live-box">
-    <p>Live stream ကြည့်ရန်👇</p>
-    <button onclick="goLive()">LIVE ကြည့်</button>
+  <div class="match-card">
+    <div class="teams">Team C vs Team D</div>
+    <div class="info">📅 Tomorrow | 🕒 6:00 PM</div>
+    <button onclick="goMatch(2)">View</button>
   </div>
+
 </section>
 
-<!-- ===== CHAT ===== -->
-<section class="chat">
-  <div class="section-header">
-    <h2>💬 Live Chat</h2>
+<!-- ===== LIVE SECTION ===== -->
+<section class="section-header">
+  <h2>🔴 Partner Channels</h2>
+</section>
+
+<section class="match-list">
+
+  <div class="match-card">
+    <div class="teams">YouTube Channel</div>
+    <div class="info">Watch matches & highlights</div>
+    <a href="live.html">
+      <button>Go</button>
+    </a>
   </div>
 
-  <div class="chat-box">
-    <div id="chatMessages"></div>
-
-    <div class="chat-input">
-      <input id="chatInput" placeholder="စာရေးပါ...">
-      <button onclick="sendMsg()">➤</button>
-    </div>
+  <div class="match-card">
+    <div class="teams">Facebook Pages</div>
+    <div class="info">Live streaming pages</div>
+    <a href="live.html">
+      <button>Go</button>
+    </a>
   </div>
+
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -99,7 +97,14 @@
 
 <!-- ===== JS ===== -->
 <script src="js/main.js"></script>
-<script src="js/chat.js"></script>
+
+<!-- ===== PWA SERVICE WORKER ===== -->
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker Registered"));
+}
+</script>
 
 </body>
 </html>
