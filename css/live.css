@@ -1,0 +1,114 @@
+/* ===== LIVE HEADER ===== */
+.live-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.live-header h1 {
+  font-size: 40px;
+  color: #F0A500;
+}
+
+.live-header p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* ===== TABS ===== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #1A1A1A;
+  border: 1px solid #333;
+  color: white;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.tab-btn:hover {
+  border-color: #F0A500;
+}
+
+.tab-btn.active {
+  background: #F0A500;
+  color: #000;
+}
+
+/* ===== STREAM LIST ===== */
+.stream-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ===== STREAM CARD ===== */
+.stream-card {
+  background: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.stream-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #F0A500;
+}
+
+/* ===== INFO ===== */
+.stream-info h3 {
+  margin-bottom: 5px;
+}
+
+.stream-info p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ===== BADGES ===== */
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 5px;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.badge.youtube {
+  background: red;
+}
+
+.badge.facebook {
+  background: #1877f2;
+}
+
+.badge.live {
+  background: #F0A500;
+  color: #000;
+  font-weight: bold;
+}
+
+/* ===== BUTTON ===== */
+.stream-card button {
+  margin-top: 15px;
+  background: #F0A500;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.stream-card button:hover {
+  opacity: 0.8;
+}
