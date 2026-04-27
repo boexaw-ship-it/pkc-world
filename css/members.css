@@ -1,0 +1,81 @@
+/* ===== HEADER ===== */
+.members-header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.members-header h1 {
+  color: #F0A500;
+  font-size: 35px;
+}
+
+.members-header p {
+  color: #aaa;
+}
+
+/* ===== SEARCH ===== */
+.member-search {
+  text-align: center;
+  margin: 20px;
+}
+
+.member-search input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* ===== MEMBER LIST ===== */
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== MEMBER CARD ===== */
+.member-card {
+  background: #1A1A1A;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #F0A500;
+}
+
+/* ===== IMAGE ===== */
+.member-card img {
+  width: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* ===== TEXT ===== */
+.member-card h3 {
+  margin-bottom: 5px;
+}
+
+.member-card p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ===== BUTTON ===== */
+.member-card button {
+  margin-top: 10px;
+  background: #F0A500;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.member-card button:hover {
+  opacity: 0.8;
+}
