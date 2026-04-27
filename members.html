@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members - PKC World</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/members.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>PKC World</span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">ပွဲစာရင်း</a></li>
+    <li><a href="live.html">🔴 LIVE</a></li>
+    <li><a href="members.html" class="active">Members</a></li>
+    <li><a href="members/login.html">Login</a></li>
+  </ul>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- ===== HEADER ===== -->
+<section class="members-header">
+  <h1>👤 Members</h1>
+  <p>PKC World မှာ ပါဝင်နေသော Member များ</p>
+</section>
+
+<!-- ===== SEARCH ===== -->
+<div class="member-search">
+  <input type="text" id="searchInput" placeholder="Search member...">
+</div>
+
+<!-- ===== MEMBER LIST ===== -->
+<section class="member-list" id="memberList">
+
+  <!-- MEMBER CARD -->
+  <div class="member-card" data-name="Aung Aung">
+    <img src="assets/images/user.png" alt="user">
+    <h3>Aung Aung</h3>
+    <p>Joined: 2026</p>
+    <button onclick="viewProfile('Aung Aung')">View Profile</button>
+  </div>
+
+  <!-- MEMBER CARD -->
+  <div class="member-card" data-name="Mg Mg">
+    <img src="assets/images/user.png" alt="user">
+    <h3>Mg Mg</h3>
+    <p>Joined: 2026</p>
+    <button onclick="viewProfile('Mg Mg')">View Profile</button>
+  </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 PKC World</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script src="js/main.js"></script>
+<script src="js/members.js"></script>
+
+</body>
+</html>
