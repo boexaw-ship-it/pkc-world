@@ -1,0 +1,96 @@
+/* ===== MATCH DETAIL ===== */
+.match-detail {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.match-detail h1 {
+  font-size: 35px;
+  color: #F0A500;
+}
+
+/* ===== META ===== */
+.match-meta {
+  margin-top: 10px;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ===== TEAMS ===== */
+.teams-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 40px;
+}
+
+.team img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.team h2 {
+  font-size: 20px;
+}
+
+/* ===== VS ===== */
+.vs {
+  font-size: 25px;
+  color: #F0A500;
+  font-weight: bold;
+}
+
+/* ===== DESCRIPTION ===== */
+.match-info {
+  max-width: 600px;
+  margin: auto;
+  color: #ccc;
+}
+
+/* ===== ACTIONS ===== */
+.actions {
+  margin-top: 20px;
+}
+
+.actions button {
+  background: #F0A500;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.actions button:hover {
+  opacity: 0.8;
+}
+
+/* ===== RELATED ===== */
+.related {
+  padding: 20px;
+}
+
+.related h2 {
+  margin-bottom: 10px;
+}
+
+.related .match-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.related .match-card {
+  background: #1A1A1A;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.related .match-card:hover {
+  border: 1px solid #F0A500;
+}
